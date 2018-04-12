@@ -29,7 +29,7 @@ def turn(board)
   if !valid_move?(board, index)
     turn(board)
   else
-    move(board, index, token)
+    move(board, index, token = 'X')
   end
   display_board
 end 
